@@ -86,6 +86,47 @@
             text-decoration: underline;
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
+        .dropbtn {
+                      background-color: midnightblue;
+                      color: white;
+                      padding: 16px;
+                      font-size: 16px;
+                      border: none;
+                      cursor: pointer;
+                      border-radius: 10px;
+                    }
+                    .opt{
+                        margin-top: 3px;
+                    }
+                    .dropbtn:hover, .dropbtn:focus {
+                      background-color: #000000;
+                    }
+                    
+                    .dropdown {
+                      position: relative;
+                      display: inline-block;
+                    }
+                    
+                    .dropdown-content {
+                      display: none;
+                      position: absolute;
+                      background-color: #f1f1f1;
+                      min-width: 160px;
+                      overflow: auto;
+                      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                      z-index: 1;
+                    }
+                    
+                    .dropdown-content a {
+                      color: black;
+                      padding: 12px 16px;
+                      text-decoration: none;
+                      display: block;
+                    }
+                    
+                    .dropdown a:hover {background-color: #ddd;}
+                    
+                    .show {display: block;}        
         /* .dropdown ul{
             margin: 0;
             padding: 0;
@@ -129,7 +170,17 @@
             <div class="icons">
                 <ul >
                     <li class="xyz"><a href="index.html">Home</a></li>
-                    <li class="xyz"><a href="classification.html">Calibration/Testing</a></li>
+                    <!-- <li class="xyz"><a href="classification.html">Calibration/Testin</a></li> -->
+                     <li class="opt">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Opt me</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="Calibration.html">Calibration Parameter</a>
+                              <a href="#about">Testing Charges</a>
+                              <a href="#contact">BND</a>
+                            </div>
+                          </div>
+                     </li>
                     <!-- <div class="dropdown">
                    </div>  -->
                     <li class="xyz"><a href="">Services</a></li>
@@ -152,61 +203,12 @@
                         <option class="ac" value="BND">BND</option>
                     </select>
                 </div> -->
-                <style>
-                    .dropbtn {
-                      background-color: midnightblue;
-                      color: white;
-                      padding: 16px;
-                      font-size: 16px;
-                      border: none;
-                      cursor: pointer;
-                      border-radius: 10px;
-                    }
-                    
-                    .dropbtn:hover, .dropbtn:focus {
-                      background-color: #000000;
-                    }
-                    
-                    .dropdown {
-                      position: relative;
-                      display: inline-block;
-                    }
-                    
-                    .dropdown-content {
-                      display: none;
-                      position: absolute;
-                      background-color: #f1f1f1;
-                      min-width: 160px;
-                      overflow: auto;
-                      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                      z-index: 1;
-                    }
-                    
-                    .dropdown-content a {
-                      color: black;
-                      padding: 12px 16px;
-                      text-decoration: none;
-                      display: block;
-                    }
-                    
-                    .dropdown a:hover {background-color: #ddd;}
-                    
-                    .show {display: block;}
-                    </style>
                     </head>
                     <body style="background-color:white;">
                     
                     <h2>Clickable Dropdown</h2>
                     <p>Click on the button to open the dropdown menu.</p>
                     
-                    <div class="dropdown">
-                      <button onclick="myFunction()" class="dropbtn">Click Me</button>
-                      <div id="myDropdown" class="dropdown-content">
-                        <a href="Meterological.html">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#contact">Contact</a>
-                      </div>
-                    </div>
                     
                     <script>
                     /* When the user clicks on the button, 
